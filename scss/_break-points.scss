@@ -90,7 +90,13 @@
             font-size: $fs-p + .1rem;
         }
     }
+    div.page-404{
+        img{
+           width: 95%;
+        }
+    }
 }
+
 @media (width < 560px) {
     div.grids{
         grid-template-columns: 1fr;

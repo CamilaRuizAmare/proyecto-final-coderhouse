@@ -37,6 +37,9 @@
                     padding: 5px;
                     margin: 0 5px;
                     border-radius: 12px;
+                    &:hover{
+                        background-color: $color-bg2;
+                    }
                     a{
                         text-decoration: none;
                         font-size: 1.6rem;
@@ -44,8 +47,6 @@
                         &:hover{
                             font-size: $fs-p;
                             color: $color-raiz;
-                            background-color: $color-bg2;
-                            border-radius: 10px;
                         }
                     }
                 }
@@ -106,7 +107,13 @@
                     fill: $color-raiz;
                     width: 40px;
                     padding-right: 15px;
+                    &:hover{
+                        transform: scale(1.3);
+                        transition: all 1s;
+                        
+                    }
                 }
+                
             }
             p{
                 display: inline-block;
