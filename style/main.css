@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Montserrat:ital,wght@0,300;1,200&family=Oleo+Script+Swash+Caps&display=swap");
+* {
+  font-family: "montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(217, 215, 216);
+}
+
+nav.navbar {
+  padding: 4px 35px 0 35px;
+}
+nav.navbar button.navbar-toggler {
+  background-color: rgb(242, 185, 153);
+  height: 40px;
+  width: 50px;
+}
+nav.navbar button.navbar-toggler:hover {
+  background-color: rgb(191, 121, 96);
+}
+nav.navbar button.navbar-toggler:focus {
+  box-shadow: none;
+}
+nav.navbar button.navbar-toggler span {
+  width: 30px;
+}
+nav.navbar a {
+  text-decoration: none;
+}
+nav.navbar a img {
+  width: 200px;
+}
+nav.navbar ul {
+  list-style: none;
+}
+nav.navbar ul li {
+  border: 1px rgb(191, 121, 96) solid;
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 12px;
+}
+nav.navbar ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: rgb(191, 121, 96);
+}
+nav.navbar ul li a:hover {
+  font-size: 1.8rem;
+  color: rgb(154, 91, 217);
+  background-color: rgba(240, 248, 255, 0.3);
+  border-radius: 10px;
+}
+
+header img {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  color: rgb(154, 91, 217);
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin: 7px auto;
+}
+
+h2 {
+  font-size: 3.2rem;
+  margin: 5px auto;
+}
+
+h3 {
+  font-size: 2.6rem;
+  padding-top: 3px;
+}
+
+p {
+  color: rgb(191, 121, 96);
+  font-size: 1.8rem;
+  line-height: 2rem;
+  padding: 5px 25px;
+  justify-items: center;
+  align-items: center;
+}
+
+div.flexbox {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 5px auto;
+  padding: 7px;
+}
+
+.bg-gral {
+  background-color: rgb(242, 185, 153);
+}
+
+footer {
+  margin: 5px 0;
+  padding: 4px 35px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+footer a {
+  text-decoration: none;
+}
+footer a svg {
+  fill: rgb(154, 91, 217);
+  width: 40px;
+  padding-right: 15px;
+}
+footer p {
+  display: inline-block;
+}
+footer p a {
+  color: rgb(154, 91, 217);
+}
+footer p a:hover {
+  font-size: 1.8rem;
+  background-color: rgba(240, 248, 255, 0.3);
+}
+
+div.carousel {
+  width: 100%;
+}
+div.carousel div.carousel-item img {
+  width: 100%;
+}
+
+.img-mobile {
+  display: none;
+}
+
+iframe {
+  width: 100%;
+  margin: 5px auto;
+  padding: 15px 5px;
+  height: 315px;
+}
+
+p a {
+  color: rgb(154, 91, 217);
+  text-decoration: none;
+}
+p a:hover {
+  background-color: rgba(240, 248, 255, 0.3);
+}
+
+.img-ejercicios {
+  padding: 0 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.button, section.contenedor-form form input.button-ingreso, figure button.button-figure {
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(242, 185, 153);
+  font-size: 1.3rem;
+  width: 80px;
+}
+.button:hover, section.contenedor-form form input.button-ingreso:hover, figure button.button-figure:hover {
+  background-color: rgb(191, 121, 96);
+  color: rgb(217, 215, 216);
+}
+
+section.contenedor-dropdown {
+  width: 95%;
+  margin: 15px auto;
+  padding: 15px;
+}
+section.contenedor-dropdown h2 button.bg-gral {
+  color: rgb(154, 91, 217);
+  font-size: 3rem;
+  background-color: rgb(242, 185, 153);
+}
+section.contenedor-dropdown div.accordion-item {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(217, 215, 216);
+}
+section.contenedor-dropdown div.accordion-item ul {
+  list-style: none;
+  margin: 7px auto;
+  padding-left: 15px;
+}
+section.contenedor-dropdown div.accordion-item ul li {
+  font-size: 1.7rem;
+  line-height: 1.9rem;
+  color: rgb(191, 121, 96);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+figure {
+  padding: 5px;
+  border: 3px rgb(242, 185, 153) solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+figure img {
+  width: 100%;
+}
+figure figcaption {
+  margin: 5px;
+  color: rgb(154, 91, 217);
+  font-size: 1.8rem;
+  text-align: center;
+}
+figure p {
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 10px;
+}
+figure button.button-figure {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+section.contenedor-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+section.contenedor-form form label {
+  color: rgb(154, 91, 217);
+  font-size: 1.5rem;
+  padding-right: 5px;
+}
+section.contenedor-form form input.bg-gral {
+  border: black;
+  border-style: solid;
+  border-radius: 3px;
+}
+section.contenedor-form form input.bg-gral:focus {
+  box-shadow: none;
+}
+section.contenedor-form form input.button-ingreso {
+  font-size: 1.2rem;
+  width: 70px;
+}
+section.contenedor-form form textarea.form-control {
+  border: black;
+  border-style: solid;
+  border-radius: 3px;
+}
+section.contenedor-form form textarea.form-control:focus {
+  box-shadow: none;
+}
+section.contenedor-form a {
+  text-decoration: none;
+  color: rgb(191, 121, 96);
+  font-size: 1.2rem;
+}
+section.contenedor-form p {
+  font-size: 1.6rem;
+}
+section.contenedor-form span {
+  color: rgb(191, 121, 96);
+  font-size: 1.2rem;
+}
+
+div.imagen {
+  justify-content: center;
+  animation-name: img-opacity;
+  animation-duration: 4s;
+}
+div.imagen img.img-ingreso {
+  object-fit: contain;
+}
+
+div.grids {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-template-rows: 2, 1fr;
+  grid-template-areas: "form imagen imagen inicio" "form imagen imagen usuario";
+}
+
+.form {
+  grid-area: form;
+}
+
+.imagen {
+  grid-area: imagen;
+}
+
+.inicio {
+  grid-area: inicio;
+}
+
+.usuario {
+  grid-area: usuario;
+}
+
+@keyframes img-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (width < 1248px) {
+  figure figcaption {
+    font-size: 2.4rem;
+  }
+}
+@media (width < 995px) {
+  figure figcaption {
+    font-size: 1.7rem;
+  }
+}
+@media (width < 768px) {
+  nav.navbar ul {
+    align-items: end;
+  }
+  nav.navbar ul li {
+    margin-bottom: 4px;
+    text-align: center;
+    width: 25%;
+  }
+  img[src="../img/bg-silueta.webp"] {
+    display: none;
+  }
+  img[src="../img/mujer-ejerc.webp"] {
+    width: 75%;
+    margin-bottom: 2px;
+  }
+  div.grids {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "inicio usuario" "form form";
+  }
+  .usuario {
+    margin-top: 29.5px;
+  }
+  section.contenedor-form h2 {
+    margin: 15px auto;
+  }
+  .form {
+    margin-right: 15px;
+  }
+  h3.bp-768 {
+    text-align: center;
+  }
+  div.carousel img {
+    width: 90%;
+    justify-items: center;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div p {
+    text-align: center;
+  }
+  footer div a svg {
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 520px) and (max-width: 660px) {
+  nav.navbar ul {
+    align-items: end;
+  }
+  nav.navbar ul li {
+    width: 50%;
+  }
+}
+@media (width < 576px) {
+  figure figcaption {
+    font-size: 2.2rem;
+  }
+  figure p {
+    font-size: 1.9rem;
+  }
+}
+@media (width < 560px) {
+  div.grids {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) 2fr;
+    grid-template-areas: "inicio" "usuario" "form";
+  }
+  .inicio {
+    margin-bottom: 10px;
+  }
+  .usuario {
+    margin: auto;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .h1-media-520 {
+    font-size: 3.8rem;
+    margin: 1px 5px;
+  }
+}
+@media (width < 520px) {
+  nav.navbar ul {
+    align-items: center;
+  }
+  nav.navbar ul li {
+    width: 100%;
+  }
+  nav.navbar a img {
+    width: 150px;
+  }
+  .break-point-none {
+    display: none;
+  }
+  .img-mobile {
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

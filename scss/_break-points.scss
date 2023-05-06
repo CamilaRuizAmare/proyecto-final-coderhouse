@@ -1,0 +1,138 @@
+@media (width < 1248px){
+    figure figcaption{
+            font-size: $fs-h3 - .2rem;
+            }
+}
+@media (width < 995px){
+    figure figcaption{
+            font-size: $fs-p - .1rem;
+            }
+}
+
+@media (width < 768px){
+    
+    nav.navbar {
+        ul{
+        align-items: end;
+        li{             
+            margin-bottom: 4px;
+            text-align: center;
+            width: $w-25;
+        }
+        }
+    }
+    img[src="../img/bg-silueta.webp"]{
+        display: none;
+        }
+    img[src="../img/mujer-ejerc.webp"]{
+        width: $w-75;
+        margin-bottom: 2px;
+        }
+    div.grids{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        "inicio usuario"
+        "form form";
+        }
+        .usuario{
+            margin-top: 29.5px;
+        }
+        section.contenedor-form{
+            h2{
+            margin: 15px auto;
+            }
+        }
+        .form{
+            margin-right: 15px;
+            
+        }
+        h3.bp-768{
+            text-align: center;
+        }
+    div.carousel {
+        img{
+            width: $w-90;
+            justify-items: center;
+        }
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        div{
+            p{
+                text-align: center;
+            }
+            a{
+                svg{
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:520px) and (max-width:660px){
+    nav.navbar {
+        ul{
+            align-items: end;
+            li{
+                width: $w-50;
+            }
+        }
+    }
+}
+@media (width < 576px){
+    figure{
+        figcaption{
+            font-size: $fs-p + .4rem;
+        }
+        p{
+            font-size: $fs-p + .1rem;
+        }
+    }
+}
+@media (width < 560px) {
+    div.grids{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr) 2fr;
+        grid-template-areas: 
+        "inicio"
+        "usuario"
+        "form";
+    }
+    .inicio{
+        margin-bottom: 10px;
+    }    
+    .usuario{
+            margin: auto;
+            justify-content: center;
+            margin-top: 15px;
+        }
+    .h1-media-520{
+        font-size: $fs-h1 - .7rem;
+        margin: 1px 5px;
+    }
+}
+@media (width < 520px){
+    nav.navbar{
+        ul{
+            align-items: center;
+            li{
+                width: $w-100;
+            }
+        }
+        a{
+            img{
+                width: 150px;
+            }
+        }
+    }
+    .break-point-none{
+        display: none;
+    }
+    .img-mobile{
+        display: flex;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+}

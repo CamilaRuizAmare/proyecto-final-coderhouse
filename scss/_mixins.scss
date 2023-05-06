@@ -1,0 +1,24 @@
+@mixin buttons-gral($border,$border-radius,$bg-color){
+    border: $border;
+    border-radius: $border-radius;
+    background-color: $bg-color;
+}
+
+@mixin buttons-extra($f-size,$width){
+    font-size: $f-size;
+    width: $width;
+}
+
+@mixin spacing($width,$margin,$padding){
+    width: $width;
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin grids($columns,$rows,$area){
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $area;
+}
+

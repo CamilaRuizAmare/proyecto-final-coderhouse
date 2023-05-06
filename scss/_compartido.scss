@@ -1,0 +1,121 @@
+*{
+    font-family: $font-principal;
+    box-sizing: border-box;
+}
+    html{
+        font-size: $fs-html;
+    }
+        body{
+            background-color: $color-bg;
+        }
+        nav.navbar{
+            padding: 4px 35px 0 35px;
+            button.navbar-toggler{
+                background-color: $color-complementario;
+                height: 40px;
+                width: 50px;
+                &:hover{
+                    background-color: $color-texto
+                    }
+                &:focus{
+                    box-shadow: none;
+                    }
+                span{
+                    width: 30px;
+                }
+            }
+            a{
+                text-decoration: none;
+                img{
+                    width: 200px;
+                }
+            }
+            ul{
+                list-style: none;
+                li{
+                    border: 1px $color-texto solid;
+                    padding: 5px;
+                    margin: 0 5px;
+                    border-radius: 12px;
+                    a{
+                        text-decoration: none;
+                        font-size: 1.6rem;
+                        color: $color-texto;
+                        &:hover{
+                            font-size: $fs-p;
+                            color: $color-raiz;
+                            background-color: $color-bg2;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        header{
+            img{
+                width: $w-100;
+            } 
+        }
+        h1, h2, h3{
+            color: $color-raiz;
+            font-family: $font-titles;
+        }
+        h1{
+            font-size: $fs-h1;
+            margin: 7px auto;
+        }
+        h2{
+            font-size: $fs-h2;
+            margin: 5px auto;
+        }
+        h3{
+            font-size: $fs-h3;
+            padding-top: 3px;
+        }
+        p{
+            color: $color-texto;
+            font-size: $fs-p;
+            line-height: 2rem;
+            padding: 5px 25px;
+            justify-items: center;
+            align-items: center;
+        }
+        div.flexbox{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            align-items: center;
+        }
+        .contenedor{
+            @include spacing($w-90,5px auto,7px)
+        }   
+        .bg-gral{
+            background-color: $color-complementario;
+        }
+
+        footer{
+            margin: 5px 0;
+            padding: 4px 35px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                svg{
+                    fill: $color-raiz;
+                    width: 40px;
+                    padding-right: 15px;
+                }
+            }
+            p{
+                display: inline-block;
+                a{
+                    color: $color-raiz;
+                    &:hover{
+                        font-size: $fs-p;
+                        background-color: $color-bg2;
+                    }
+                }
+            }
+        }

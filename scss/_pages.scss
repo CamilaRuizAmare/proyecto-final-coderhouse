@@ -1,0 +1,173 @@
+//pages organiza-tu-semana y a-moverse
+div.carousel{
+    width: $w-100;
+    div.carousel-item{
+        img{
+                width: $w-100;
+        }
+    }
+}
+.img-mobile{
+    display: none;
+}
+iframe{
+    @include spacing($w-100,5px auto,15px 5px);
+    height: 315px;
+}
+p{
+    a{
+        color: $color-raiz;
+        text-decoration: none;
+        &:hover{
+            background-color: $color-bg2;
+            }
+    }
+}
+.img-ejercicios{
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+}
+//page nuestros-planes
+.button{
+    @include buttons-gral(none, 4px, $color-complementario);
+    @include buttons-extra($fs-button,80px);
+    &:hover{
+        background-color: $color-texto;
+        color: $color-bg;
+    }
+}
+section.contenedor-dropdown{
+        @include spacing($w-95, 15px auto, 15px);
+        h2{
+            button.bg-gral{
+                color: $color-raiz;
+                font-size: $fs-h2 - .2rem;
+                background-color: $color-complementario;
+            }
+        }
+        div.accordion-item{
+            @include buttons-gral(none,10px,$color-bg);
+            ul{
+                list-style: none;
+                margin: 7px auto;
+                padding-left: 15px;
+                li{
+                    font-size: $fs-p - .1rem;
+                    line-height: 1.9rem;
+                    color: $color-texto;
+                }
+            }
+        }
+}
+.accordion-button{
+    &:focus{
+        box-shadow: none;
+        }
+}
+.space-around{
+    justify-content: space-around;
+}
+figure{
+    padding: 5px;
+    border: 3px $color-complementario solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    img{
+        width: $w-100;
+    }
+    figcaption{
+        margin: 5px;
+        color: $color-raiz;
+        font-size: $fs-p;
+        text-align: center;
+    }
+    p{
+        font-size: $fs-p - .1rem;
+        text-align: center;
+        padding: 10px;
+    }
+    button.button-figure{
+        @extend .button;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+}
+//page ingreso
+section.contenedor-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    form{
+        label{
+            color: $color-raiz;
+            font-size: $fs-button + .2rem;
+            padding-right: 5px;
+        }
+        input.bg-gral{
+            border: black;
+            border-style: solid;
+            border-radius: 3px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        input.button-ingreso{
+            @extend .button;
+            @include buttons-extra($fs-button - .1rem ,70px);
+        }
+        textarea.form-control{
+            border: black;
+            border-style: solid;
+            border-radius: 3px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $color-texto;
+        font-size: $fs-button - .1rem;
+    }
+    p{
+        font-size: $fs-p - .2rem;
+    }
+    span{
+        color: $color-texto;
+        font-size: $fs-button - .1rem;
+    }
+}
+
+div.imagen{
+    justify-content: center;
+    animation-name: img-opacity;
+    animation-duration: 4s;
+    img.img-ingreso{
+        object-fit: contain;
+    }
+}
+
+div.grids{
+    @include grids(1.5fr repeat(3, 1fr),(2, 1fr),
+    "form imagen imagen inicio"
+    "form imagen imagen usuario");
+}
+.form{
+    grid-area: form;
+}
+.imagen{
+    grid-area: imagen;
+}
+.inicio{
+    grid-area: inicio;
+}
+.usuario{
+    grid-area: usuario;
+}
+
+@keyframes img-opacity {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
