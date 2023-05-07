@@ -153,6 +153,7 @@ iframe {
   margin: 5px auto;
   padding: 15px 5px;
   height: 315px;
+  overflow-x: hidden;
 }
 
 p a {

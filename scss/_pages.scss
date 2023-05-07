@@ -13,6 +13,7 @@ div.carousel{
 iframe{
     @include spacing($w-100,5px auto,15px 5px);
     height: 315px;
+    overflow-x: hidden;
 }
 p{
     a{
