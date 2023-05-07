@@ -7,6 +7,7 @@
     }
         body{
             background-color: $color-bg;
+            overflow-x: hidden;
         }
         nav.navbar{
             padding: 4px 35px 0 35px;
