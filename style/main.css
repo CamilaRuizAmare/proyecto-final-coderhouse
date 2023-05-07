@@ -10,6 +10,7 @@ html {
 
 body {
   background-color: rgb(217, 215, 216);
+  overflow-x: hidden;
 }
 
 nav.navbar {
